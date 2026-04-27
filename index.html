@@ -25,6 +25,7 @@
       background: #f6f6f6;
       display: flex;
       align-items: center;
+      justify-content: space-between;
       padding: 0 12px;
       border-bottom: 1px solid #eaeaea;
       color: #707070;
@@ -86,13 +87,12 @@
 </head>
 <body>
   <main class="page">
-    <div class="header">預覽</div>
+    <div class="header">
+      <span>預覽</span>
+      <button class="info-button" id="showInfoBtn" type="button">查看資訊</button>
+    </div>
 
     <section class="viewer" aria-label="Image preview module">
-      <div class="action-row">
-        <button class="info-button" id="showInfoBtn" type="button">查看資訊</button>
-      </div>
-
       <div class="image-frame">$1</div>
 
       <div class="detail-panel" id="detailPanel" aria-live="polite">
@@ -114,3 +114,4 @@
   </script>
 </body>
 </html>
+
